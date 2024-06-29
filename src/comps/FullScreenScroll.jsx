@@ -1,18 +1,8 @@
-import React, { useState, useEffect } from "react";
-import {
-  Box,
-  Button,
-  Drawer,
-  Grid,
-  IconButton,
-  List,
-  ListItem,
-  ListItemText,
-  Typography,
-} from "@mui/material";
+import { Box, Grid, IconButton, Typography } from "@mui/material";
 import { Slide, Zoom } from "react-awesome-reveal";
 import LoginOutlinedIcon from "@mui/icons-material/LoginOutlined";
 import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const FullScreenScroll = ({ sections }) => {
   const [currentSection, setCurrentSection] = useState(0);

@@ -2,7 +2,6 @@ import axios from "axios";
 
 const API_URL = "http://localhost:5001";
 
-// Устанавливаем базовый URL для всех запросов
 const api = axios.create({
   baseURL: API_URL,
   headers: {
@@ -10,7 +9,6 @@ const api = axios.create({
   },
 });
 
-// Регистрация пользователя
 export const registerUser = async (userData) => {
   try {
     const response = await api.post("/api/auth/register", userData);
@@ -24,7 +22,6 @@ export const registerUser = async (userData) => {
   }
 };
 
-// Вход пользователя
 export const loginUser = async (userData) => {
   try {
     const response = await api.post("/api/auth/login", userData);
@@ -35,7 +32,6 @@ export const loginUser = async (userData) => {
   }
 };
 
-// Получение настроек пользователя
 export const fetchUserSettings = async (token) => {
   try {
     const response = await api.get("/api/settings", {

@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { fetchUserSettings, saveUserSettings } from "../../../api";
+import { fetchUserSettings, saveUserSettings } from "../../../shared/api.js";
 
 export const fetchSettings = createAsyncThunk(
   "settings/fetchSettings",

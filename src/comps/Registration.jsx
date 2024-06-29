@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { register } from "../store/features/user/userSlice";
 import { Box, TextField, Button, Typography } from "@mui/material";

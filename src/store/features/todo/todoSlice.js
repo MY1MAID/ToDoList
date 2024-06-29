@@ -5,7 +5,7 @@ import {
   deleteTodoItem,
   updateTodoItem,
   addTodoList,
-} from "../../../api";
+} from "../../../shared/api.js";
 
 export const addList = createAsyncThunk(
   "todo/addList",

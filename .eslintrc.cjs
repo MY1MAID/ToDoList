@@ -18,6 +18,8 @@ module.exports = {
   settings: { react: { version: "detect" } },
   plugins: ["react-refresh"],
   rules: {
+    "react/prop-types": 0,
+    "react-hooks/exhaustive-deps": 0,
     "react/jsx-no-target-blank": "off",
     "react-refresh/only-export-components": [
       "warn",

@@ -1,8 +1,6 @@
-import React, { useState } from "react";
 import {
   AppBar,
   Box,
-  Button,
   IconButton,
   Toolbar,
   Typography,
@@ -15,6 +13,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { logout } from "../store/features/user/userSlice.js";
+import { useState } from "react";
 
 const HomePage = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);

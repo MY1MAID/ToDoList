@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -8,16 +8,16 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import { ThemeProvider } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
-import Header from "./comps/Header.jsx";
-import { fetchSettings } from "./store/features/settings/settingsSlice";
-import PrivateRoute from "./comps/PrivateRoute.jsx";
-import HomePage from "./pages/HomePage.jsx";
-import SettingsPage from "./pages/SettingsPage.jsx";
-import TodoTasksPage from "./pages/TodoTasksPage.jsx";
-import MainPage from "./pages/MainPage.jsx";
-import { lightTheme } from "./themes/LightTheme.jsx";
-import { darkTheme } from "./themes/DarkTheme.jsx";
-import LoginPage from "./pages/LoginPage.jsx";
+import Header from "../comps/Header.jsx";
+import { fetchSettings } from "../store/features/settings/settingsSlice.js";
+import PrivateRoute from "../comps/PrivateRoute.jsx";
+import HomePage from "../pages/HomePage.jsx";
+import SettingsPage from "../pages/SettingsPage.jsx";
+import TodoTasksPage from "../pages/TodoTasksPage.jsx";
+import MainPage from "../pages/MainPage.jsx";
+import { lightTheme } from "../themes/LightTheme.jsx";
+import { darkTheme } from "../themes/DarkTheme.jsx";
+import LoginPage from "../pages/LoginPage.jsx";
 
 const App = () => {
   const dispatch = useDispatch();

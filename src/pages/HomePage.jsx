@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   Box,
@@ -9,7 +9,6 @@ import {
   DialogContentText,
   DialogTitle,
   TextField,
-  Typography,
 } from "@mui/material";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
 import { fetchLists, addList } from "../store/features/todo/todoSlice";

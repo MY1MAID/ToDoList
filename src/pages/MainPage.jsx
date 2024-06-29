@@ -1,4 +1,3 @@
-import React from "react";
 import FullScreenScroll from "../comps/FullScreenScroll.jsx";
 
 const MainPage = () => {
